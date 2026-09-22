@@ -1,0 +1,21 @@
+# Configuración de seguridad de Streamlit.
+# Relevante sobre todo si algún día despliegas esta app en un servidor
+# público (Streamlit Community Cloud, un VPS, etc.) en vez de correrla
+# solo en localhost para la demo de clase.
+
+[server]
+# Protección CSRF (Cross-Site Request Forgery): mantenerla activa (default),
+# nunca ponerla en false salvo que sepas exactamente por qué.
+enableXsrfProtection = true
+
+# CORS: mantenido activo. Desactivarlo permitiría que cualquier sitio web
+# externo haga peticiones a tu app desde el navegador de otra persona.
+enableCORS = true
+
+# Límite de tamaño de archivos que un usuario podría subir (por defecto
+# 200MB es demasiado permisivo si algún día agregas carga de CSV).
+maxUploadSize = 5
+
+[browser]
+# Evita enviar estadísticas de uso a servidores de Streamlit/terceros.
+gatherUsageStats = false

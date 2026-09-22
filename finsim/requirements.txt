@@ -1,0 +1,9 @@
+# Versiones fijadas (pinned) a propósito por seguridad de cadena de suministro:
+# un "pip install" con >= podría instalar en el futuro una versión con una
+# vulnerabilidad conocida (CVE) sin que te enteres, o romper la app por un
+# cambio de comportamiento. Antes de actualizar cualquiera de estas versiones,
+# revisa su changelog y corre `pip-audit` (ver nota en README de seguridad).
+streamlit==1.38.0
+numpy==1.26.4
+pandas==2.2.2
+matplotlib==3.9.0

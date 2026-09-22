@@ -1,0 +1,26 @@
+# Entornos virtuales
+venv/
+env/
+.venv/
+
+# Cache de Python
+__pycache__/
+*.pyc
+*.pyo
+
+# Cache de Streamlit
+.streamlit/secrets.toml
+
+# Variables de entorno / secretos (por si en el futuro agregas una API key,
+# por ejemplo para traer datos de mercado reales con yfinance + una key
+# de un proveedor de datos)
+.env
+*.key
+
+# Archivos del sistema operativo
+.DS_Store
+Thumbs.db
+
+# Archivos de IDE
+.vscode/
+.idea/
